@@ -1,0 +1,9 @@
+{
+    "name": "arpit/mvc",
+    "autoload": {
+        "psr-4": {
+            "Arpit\\Mvc\\": "src/"
+        }
+    },
+    "require": {}
+}
