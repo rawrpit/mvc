@@ -10,8 +10,6 @@ class HotelClass
     public function __construct(string $name, string $description, string $imageUrl)
     {
         $this->name = $name;
-
-        // Use HEREDOC to manage multi-line hotel description
         $this->description = <<<EOT
             <p>{$description}</p>
 EOT;
@@ -23,7 +21,7 @@ EOT;
     {
         return "<div class='hotel'>" .
             "<h2>" . $this->name . "</h2>" .
-            $this->description . // Display the multi-line description
+            $this->description .
             "<img src='" . $this->imageUrl . "' alt='" . $this->name . "'>" .
             "</div>";
     }
